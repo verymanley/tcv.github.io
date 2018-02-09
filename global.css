@@ -93,8 +93,8 @@ body, html
 
 #intro_txt_a
 {
-  width: 750px;
-  font-size: 80px;
+  width: 670px;
+  font-size: 72px;
   background-color: #282b2d;
   transition: .2s ease;
   border-left: 1px solid #282b2d;
@@ -102,8 +102,8 @@ body, html
 
 #intro_txt_b
 {
-  font-size: 40px;
-  width: 450px;
+  font-size: 38px;
+  width: 424px;
   background-color: #282b2d;
   transition: .2s ease;
   border-left: 1px solid #282b2d;
@@ -111,8 +111,8 @@ body, html
 
 #intro_txt_c
 {
-  font-size: 20px;
-  width: 170px;
+  font-size: 18px;
+  width: 154px;
   background-color: #282b2d;
   transition: .2s ease;
   border-left: 1px solid #282b2d;
