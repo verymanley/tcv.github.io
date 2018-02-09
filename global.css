@@ -153,24 +153,7 @@ body, html
   background-color: #232729;
 }
 
-/*---------intro end------------*/
-
-/*---------works begin------------*/
-
-.parallax_works
-{
-  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3346.JPG?raw=true");
-  height: 500px;
-  /* the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0px 2px 20px #000000;
-  border-top: 1px solid #F0FFF0;
-}
-
-#works
+#about
 {
   height: 240px;
   background-color: #282b2d;
@@ -179,20 +162,69 @@ body, html
   transition: .2s ease;
 }
 
-#works:hover #txt_title
+#about:hover #txt_title
 {
   color: #282b2d;
   background-color: #F0FFF0;
 }
 
-/*---------works end------------*/
+/*---------intro end------------*/
 
-/*---------mining begin------------*/
+/*---------Section 2 begin------------*/
 
-.parallax_mining
+.parallax_memories
+{
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3346.JPG?raw=true");
+  height: 400px;
+  /* the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 20px #000000;
+  border-top: 1px solid #F0FFF0;
+}
+
+#memories
+{
+  height: 600px;
+  background-color: #282b2d;
+  box-shadow: 0px 2px 20px #000000;
+  border-top: 1px solid #F0FFF0;
+  transition: .2s ease;
+}
+
+#memories:hover #txt_title
+{
+  color: #282b2d;
+  background-color: #F0FFF0;
+}
+
+#memories:hover #txt_content
+{
+  border-bottom: 1px solid #F0FFF0;
+}
+
+#memories_container
+{
+  position: absolute;
+  overflow: hidden;
+  width: 800px;
+  height: 300px;
+  text-align: left;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 50px;
+}
+
+/*---------Section 2 end------------*/
+
+/*---------Section 3 begin------------*/
+
+.parallax_menue
 {
   background-image: url("https://foxbytellc.github.io/background03.jpg");
-  height: 600px;
+  height: 400px;
   /* the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -203,9 +235,9 @@ body, html
   background-color: #282b2d;
 }
 
-#mining
+#menu
 {
-  height: 200px;
+  height: 600px;
   background-color: #282b2d;
   box-shadow: 0px 2px 20px #000000;
   border-top: 1px solid #F0FFF0;
@@ -235,7 +267,21 @@ body, html
   margin-top: 50px;
 }
 
-/*---------mining end------------*/
+/*---------Section 4 end------------*/
+
+.parallax_end
+{
+  background-image: url("https://foxbytellc.github.io/background03.jpg");
+  height: 600px;
+  /* the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 20px #000000;
+  border-top: 1px solid #F0FFF0;
+  background-color: #282b2d;
+}
 
 /*---------contact begin------------*/
 #contact
