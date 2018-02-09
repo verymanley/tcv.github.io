@@ -79,14 +79,16 @@ body, html
   position:absolute;
   height: auto;
   text-align: center;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 42%;
   margin-top: -160px;
   margin-left: -300px;
   padding-top: 60px;
   padding-bottom: 60px;
   color: #F0FFF0;
   border-left: 4px solid #F0FFF0;
+  transform: rotate(90deg);
+	transform-origin: left top 0;
   animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:.2}
 }
 
