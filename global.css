@@ -215,6 +215,8 @@ body, html
   left: 50%;
   margin-left: -400px;
   margin-top: 50px;
+  border: 1px solid #F0FFF0;
+  border-radius: 8px;
 }
 
 /*---------memories end------------*/
@@ -255,7 +257,23 @@ body, html
   border-bottom: 1px solid #F0FFF0;
 }
 
-/*---------menu end------------*/
+#menu_container
+{
+  position: absolute;
+  overflow: hidden;
+  width: 800px;
+  height: 300px;
+  text-align: left;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 50px;
+  border: 1px solid #F0FFF0;
+  border-radius: 8px;
+}
+
+/*---------menu end------------*
+
+/*---------end begin------------*/
 
 .parallax_end
 {
@@ -282,6 +300,8 @@ body, html
   margin-left: -400px;
   margin-top: 50px;
 }
+
+/*---------end end------------*/
 
 /*---------contact begin------------*/
 #contact
