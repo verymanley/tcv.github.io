@@ -127,7 +127,7 @@ body, html
   border-left: 1px solid #282b2d;
 }
 
-#works_content
+#intro_content
 {
   background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3323.JPG?raw=true");
   background-size: contain;
@@ -148,7 +148,7 @@ body, html
   transition: .2s ease;
 }
 
-#works_content:hover
+#intro_content:hover
 {
   background-color: #232729;
 }
@@ -244,27 +244,15 @@ body, html
   transition: .2s ease;
 }
 
-#mining:hover #txt_title
+#menu:hover #txt_title
 {
   color: #282b2d;
   background-color: #F0FFF0;
 }
 
-#mining:hover #txt_content
+#menu:hover #txt_content
 {
   border-bottom: 1px solid #F0FFF0;
-}
-
-#mining_container
-{
-  position: absolute;
-  overflow: hidden;
-  width: 800px;
-  height: 300px;
-  text-align: left;
-  left: 50%;
-  margin-left: -400px;
-  margin-top: 50px;
 }
 
 /*---------Section 4 end------------*/
@@ -281,6 +269,18 @@ body, html
   box-shadow: 0px 2px 20px #000000;
   border-top: 1px solid #F0FFF0;
   background-color: #282b2d;
+}
+
+#end_container
+{
+  position: absolute;
+  overflow: hidden;
+  width: 800px;
+  height: 300px;
+  text-align: left;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 50px;
 }
 
 /*---------contact begin------------*/
