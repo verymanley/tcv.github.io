@@ -76,10 +76,9 @@ body, html
 
 #intro_container
 {
-  position:absolute;
+  position: absolute;
   height: auto;
   text-align: center;
-  top: 0px;
   left: 42%;
   margin-left: -300px;
   padding-top: 60px;
@@ -88,7 +87,7 @@ body, html
   border-left: 4px solid #F0FFF0;
   transform: rotate(90deg);
 	transform-origin: left top 0;
-  animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:.2}
+  animation:animatetop 0.8s}@keyframes animatetop{from{top:-800px;opacity:0} to{top:0;opacity:1}
 }
 
 #intro_txt_a
@@ -145,7 +144,7 @@ body, html
   margin-top: 4%;
   box-shadow: 0px 2px 20px #000000;
   border-radius: 8px 0px 0px 8px;
-  transition: .2s ease;
+  animation:animateright 1s}@keyframes animateright{from{right:-500px;opacity:0} to{top:0;opacity:1}
 }
 
 #intro_content:hover
