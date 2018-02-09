@@ -170,7 +170,7 @@ body, html
 
 /*---------intro end------------*/
 
-/*---------Section 2 begin------------*/
+/*---------memories begin------------*/
 
 .parallax_memories
 {
@@ -217,13 +217,13 @@ body, html
   margin-top: 50px;
 }
 
-/*---------Section 2 end------------*/
+/*---------memories end------------*/
 
-/*---------Section 3 begin------------*/
+/*---------menu begin------------*/
 
 .parallax_menue
 {
-  background-image: url("https://foxbytellc.github.io/background03.jpg");
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3351.JPG?raw=true");
   height: 400px;
   /* the parallax scrolling effect */
   background-attachment: fixed;
@@ -255,7 +255,7 @@ body, html
   border-bottom: 1px solid #F0FFF0;
 }
 
-/*---------Section 4 end------------*/
+/*---------menu end------------*/
 
 .parallax_end
 {
