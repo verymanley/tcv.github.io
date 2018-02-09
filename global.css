@@ -127,6 +127,32 @@ body, html
   border-left: 1px solid #282b2d;
 }
 
+#works_content
+{
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3323.JPG?raw=true");
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  float: right;
+  height: 600px;
+  width: 529px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  background-color: #282b2d;
+  border-top: 1px solid #F0FFF0;
+  border-left: 1px solid #F0FFF0;
+  border-bottom: 1px solid #F0FFF0;
+  margin-top: 4%;
+  box-shadow: 0px 2px 20px #000000;
+  border-radius: 8px 0px 0px 8px;
+  transition: .2s ease;
+}
+
+#works_content:hover
+{
+  background-color: #232729;
+}
+
 /*---------intro end------------*/
 
 /*---------works begin------------*/
@@ -157,31 +183,6 @@ body, html
 {
   color: #282b2d;
   background-color: #F0FFF0;
-}
-
-#works_content
-{
-  position: relative;
-  float: left;
-  height: 200px;
-  width: 800px;
-  margin-bottom: 31px;
-  margin-left: 31px;
-  padding-top: 31px;
-  padding-bottom: 31px;
-  background-color: #282b2d;
-  border: 1px solid #F0FFF0;
-  left: 50%;
-  margin-left: -400px;
-  margin-top: 110px;
-  box-shadow: 0px 2px 20px #000000;
-  border-radius: 8px;
-  transition: .2s ease;
-}
-
-#works_content:hover
-{
-  background-color: #232729;
 }
 
 /*---------works end------------*/
