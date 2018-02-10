@@ -333,14 +333,14 @@ body, html
 
 #contact:hover #txt_title_c
 {
-  color: #282b2d;
-  background-color: #F0FFF0;
+  color: #F0FFF0;
+  background-color: #282b2d;
 }
 
 #contact:hover #txt_title_c_2
 {
-  color: #282b2d;
-  background-color: #F0FFF0;
+  color: #F0FFF0;
+  background-color: #282b2d;
 }
 
 #contact:hover #contact_head
@@ -387,20 +387,20 @@ body, html
 
 #map_img
 {
-  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3323.JPG?raw=true");
-  background-size: contain;
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/TCV%E5%BA%83%E5%91%8A.png?raw=true");
+  background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   float: right;
-  height: 100px;
-  width: 354px;
+  height: 50px;
+  width: 350px;
   padding-top: 31px;
   padding-bottom: 31px;
   background-color: #282b2d;
   border-top: 1px solid #F0FFF0;
   border-left: 1px solid #F0FFF0;
   border-bottom: 1px solid #F0FFF0;
-  margin-top: 400px;
+  margin-top: 458px;
   box-shadow: 0px 2px 20px #000000;
   border-radius: 8px 0px 0px 8px;
 }
