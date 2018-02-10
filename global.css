@@ -17,7 +17,31 @@ body, html
   text-decoration: none;
 }
 
-#txt_title
+#txt_title_a
+{
+  font-size: 80px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-shadow: 3px 3px #232729;
+  margin-bottom: 4px;
+  color: #F0FFF0;
+  transition: .4s ease;
+}
+
+#txt_title_a_2
+{
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  text-shadow: 3px 3px #232729;
+  margin-bottom: 4px;
+  color: #F0FFF0;
+  transition: .4s ease;
+}
+
+#txt_title_b
 {
   width: auto;
   font-size: 22px;
@@ -162,7 +186,7 @@ body, html
   transition: .2s ease;
 }
 
-#about:hover #txt_title
+#about:hover #txt_title_b
 {
   color: #282b2d;
   background-color: #F0FFF0;
@@ -194,7 +218,7 @@ body, html
   transition: .2s ease;
 }
 
-#memories:hover #txt_title
+#memories:hover #txt_title_b
 {
   color: #282b2d;
   background-color: #F0FFF0;
@@ -208,15 +232,12 @@ body, html
 #memories_container
 {
   position: absolute;
-  overflow: hidden;
   width: 800px;
-  height: 300px;
-  text-align: left;
+  height: 150px;
+  text-align: center;
   left: 50%;
   margin-left: -400px;
-  margin-top: 50px;
-  border: 1px solid #F0FFF0;
-  border-radius: 8px;
+  margin-top: 120px;
 }
 
 /*---------memories end------------*/
@@ -246,7 +267,7 @@ body, html
   transition: .2s ease;
 }
 
-#menu:hover #txt_title
+#menu:hover #txt_title_b
 {
   color: #282b2d;
   background-color: #F0FFF0;
@@ -260,15 +281,12 @@ body, html
 #menu_container
 {
   position: absolute;
-  overflow: hidden;
   width: 800px;
-  height: 300px;
-  text-align: left;
+  height: 150px;
+  text-align: center;
   left: 50%;
   margin-left: -400px;
-  margin-top: 50px;
-  border: 1px solid #F0FFF0;
-  border-radius: 8px;
+  margin-top: 120px;
 }
 
 /*---------menu end------------*
@@ -306,14 +324,20 @@ body, html
 /*---------contact begin------------*/
 #contact
 {
-  height: 400px;
+  height: 700px;
   background-color: #282b2d;
   box-shadow: 0px 2px 20px #000000;
   border-top: 1px solid #F0FFF0;
   transition: .2s ease;
 }
 
-#contact:hover #txt_title
+#contact:hover #txt_title_c
+{
+  color: #282b2d;
+  background-color: #F0FFF0;
+}
+
+#contact:hover #txt_title_c_2
 {
   color: #282b2d;
   background-color: #F0FFF0;
@@ -328,8 +352,8 @@ body, html
 {
   position: absolute;
   overflow: hidden;
+  height: 540px;
   width: 800px;
-  height: 300px;
   text-align: left;
   transition: .8s ease;
   border-bottom: 1px dashed #F0FFF0;
@@ -337,29 +361,77 @@ body, html
   font: bold;
   left: 50%;
   margin-left: -400px;
-  margin-top: 40px;
+  margin-top: 100px;
   padding-left: 24px;
 }
 
 #contact_img
 {
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3323.JPG?raw=true");
+  background-size: contain;
   position: relative;
+  background-repeat: no-repeat;
   float: left;
-  opacity: 8;
-  display: block;
-  width: 236px;
-  height: 200px;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  border-radius: 8px;
-  border: 1px solid #F0FFF0;
-  margin-top: 54px;
+  height: 400px;
+  width: 369px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  background-color: #282b2d;
+  border-top: 1px solid #F0FFF0;
+  border-right: 1px solid #F0FFF0;
+  border-bottom: 1px solid #F0FFF0;
+  margin-top: 100px;
   box-shadow: 0px 2px 20px #000000;
+  border-radius: 0px 8px 8px 0px;
 }
 
-#contact_img:hover
+#map_img
 {
-  opacity: .6;
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3323.JPG?raw=true");
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+  float: right;
+  height: 100px;
+  width: 354px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  background-color: #282b2d;
+  border-top: 1px solid #F0FFF0;
+  border-left: 1px solid #F0FFF0;
+  border-bottom: 1px solid #F0FFF0;
+  margin-top: 400px;
+  box-shadow: 0px 2px 20px #000000;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#txt_title_c
+{
+  width: auto;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  text-align: left;
+  margin-bottom: 4px;
+  margin-left: 80px;
+  color: #F0FFF0;
+  background-color: #232729;
+  transition: .4s ease;
+}
+
+#txt_title_c_2
+{
+  width: auto;
+  font-size: 22px;
+  font-weight: bold;
+  position: absolute;
+  text-align: left;
+  margin-top: 34px;
+  margin-bottom: 4px;
+  margin-left: 80px;
+  color: #F0FFF0;
+  background-color: #232729;
+  transition: .4s ease;
 }
 
 #social_container
@@ -367,10 +439,10 @@ body, html
   position: relative;
   float: left;
   height: 47px;
-  width: 160px;
+  width: 122px;
   border-right: 4px solid #F0FFF0;
-  margin-top: 202px;
-  margin-left: 40px;
+  margin-top: 400px;
+  margin-left: 80px;
   padding-top: 20px;
 }
 
@@ -380,7 +452,7 @@ body, html
   float: left;
   height: 66px;
   width: 300px;
-  margin-top: 202px;
+  margin-top: 400px;
   margin-left: 14px;
 }
 
