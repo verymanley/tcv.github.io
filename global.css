@@ -333,14 +333,14 @@ body, html
 
 #contact:hover #txt_title_c
 {
-  color: #F0FFF0;
-  background-color: #282b2d;
+  color: #282b2d;
+  background-color: #F0FFF0;
 }
 
 #contact:hover #txt_title_c_2
 {
-  color: #F0FFF0;
-  background-color: #282b2d;
+  color: #282b2d;
+  background-color: #F0FFF0;
 }
 
 #contact:hover #contact_head
@@ -393,10 +393,10 @@ body, html
   background-repeat: no-repeat;
   float: right;
   height: 50px;
-  width: 350px;
+  width: 400px;
   padding-top: 31px;
   padding-bottom: 31px;
-  background-color: #282b2d;
+  background-color: #F0FFF0;
   border-top: 1px solid #F0FFF0;
   border-left: 1px solid #F0FFF0;
   border-bottom: 1px solid #F0FFF0;
