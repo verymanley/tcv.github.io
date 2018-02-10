@@ -240,6 +240,13 @@ body, html
   margin-top: 120px;
 }
 
+
+.w3-row:after,.w3-row:before{content:"";display:table;clear:both}
+
+.w3-row-padding:after,.w3-row-padding:before,{content:"";display:table;clear:both}
+
+.w3-third{float:left;width:100%}
+
 /*---------memories end------------*/
 
 /*---------menu begin------------*/
