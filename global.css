@@ -208,15 +208,6 @@ body, html
   border-top: 1px solid #F0FFF0;
 }
 
-#memories
-{
-  height: 1000px;
-  background-color: #282b2d;
-  box-shadow: 0px 2px 20px #000000;
-  border-top: 1px solid #F0FFF0;
-  transition: .2s ease;
-}
-
 #memories_container
 {
   position: absolute;
@@ -228,13 +219,14 @@ body, html
   margin-top: 120px;
 }
 
-#grid_container
+#memories
 {
-  position: absolute;
-  height: 980px;
-  width: 100%;
-  margin-top: 16px;
-  overflow: hidden;
+  display: table;
+  clear: both;
+  background-color: #282b2d;
+  box-shadow: 0px 2px 20px #000000;
+  border-top: 1px solid #F0FFF0;
+  transition: .2s ease;
 }
 
 #third
