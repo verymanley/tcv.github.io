@@ -424,14 +424,6 @@ body, html
   margin-top: 40px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -448,8 +440,7 @@ img {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -510,8 +501,7 @@ img {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.active, .demo:hover {
   opacity: 1;
 }
 
