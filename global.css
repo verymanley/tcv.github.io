@@ -273,11 +273,12 @@ body, html
 .modal_span
 {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
   color: #fff;
   background-color: #000;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .modal_content
