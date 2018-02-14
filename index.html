@@ -64,10 +64,10 @@
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/grid/IMG_3342.JPG?raw=true" onclick="onClick(this)" style="width:100%">
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/grid/IMG_3213.JPG?raw=true" onclick="onClick(this)" style="width:100%">
   </div>
-  <div id="modal01" class="modal black" onclick="this.style.display='none'">
-    <span class="button black display-topright">&times;</span>
-    <div class="modal-content animate-zoom center transparent padding-64">
-      <img id="img01" class="image">
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
       <p id="caption"></p>
     </div>
   </div>
@@ -111,6 +111,10 @@
   </div>
 </div>
 
+<div class="progress-container">
+  <div class="progress-bar" id="myBar"></div>
+</div>
+
 <button onclick="topFunction()" id="scroll_btn" title="Go to top">
   <p><i id="arrow"></i></p>
 </button>
@@ -139,6 +143,16 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
 }
 </script>
 
