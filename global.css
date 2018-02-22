@@ -150,32 +150,6 @@ body, html
   border-left: 1px solid #282b2d;
 }
 
-#intro_content
-{
-  background-image: url("https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3364.JPG?raw=true");
-  background-size: contain;
-  position: relative;
-  background-repeat: no-repeat;
-  float: right;
-  height: 600px;
-  width: 462px;
-  padding-top: 31px;
-  padding-bottom: 31px;
-  background-color: #282b2d;
-  border-top: 1px solid #F0FFF0;
-  border-left: 1px solid #F0FFF0;
-  border-bottom: 1px solid #F0FFF0;
-  margin-top: 4%;
-  box-shadow: 0px 2px 20px #000000;
-  border-radius: 8px 0px 0px 8px;
-  animation:animateright 1s}@keyframes animateright{from{right:-530px;opacity:0} to{right:0;opacity:1}
-}
-
-#intro_content:hover
-{
-  background-color: #232729;
-}
-
 #about
 {
   height: 240px;
