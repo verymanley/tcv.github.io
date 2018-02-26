@@ -101,53 +101,33 @@ body, html
 
 #intro_container
 {
-  position: absolute;
-  height: auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
   text-align: center;
-  left: 340px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 10px;
   color: #F0FFF0;
-  border-left: 4px solid #F0FFF0;
-  transform: rotate(90deg);
-	transform-origin: left top 0;
-  animation:animatetop 1s}@keyframes animatetop{from{top:-800px;opacity:0} to{top:0;opacity:1}
+  border: 1px solid #F0FFF0;
 }
 
 #intro_txt_a
 {
-  width: 670px;
+  position:relative;
   font-size: 72px;
   background-color: #282b2d;
   transition: .2s ease;
-  border-left: 1px solid #282b2d;
+  border: 4px solid #F0FFF0;
+  animation:animatetop 1.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}
 }
 
-#intro_txt_b
-{
-  font-size: 38px;
-  width: 424px;
-  background-color: #282b2d;
-  transition: .2s ease;
-  border-left: 1px solid #282b2d;
-}
-
-#intro_txt_c
-{
-  font-size: 18px;
-  width: 154px;
-  background-color: #282b2d;
-  transition: .2s ease;
-  border-left: 1px solid #282b2d;
-}
-
-#intro_txt_a:hover, #intro_txt_b:hover, #intro_txt_c:hover
+#intro_txt_a:hover
 {
   color: #282b2d;
   background: #F0FFF0;
-  padding-left : 20px;
+  padding : 20px;
 	transition: .2s ease;
-  border-left: 1px solid #282b2d;
 }
 
 #about
