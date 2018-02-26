@@ -64,7 +64,7 @@ body, html
   padding-bottom: 10px;
 }
 
-#about:hover, #memories:hover, #menu:hover, #contact:hover
+#about:hover, #memories:hover, #menu:hover, #events:hover, #contact:hover
 {
   background: #232729;
 }
