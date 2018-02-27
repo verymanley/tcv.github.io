@@ -386,9 +386,20 @@ body, html
   position: relative;
 }
 
+.container:hover .prev{
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: .4s ease;
+}
+
+.container:hover .next{
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: .4s ease;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
+  animation:animatefade 1.4s}@keyframes animatefade{from{opacity:0} to{opacity:1}
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -402,7 +413,7 @@ body, html
   position: absolute;
   top: 40%;
   width: auto;
-  padding: 16px;
+  padding: 60px 16px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
@@ -410,6 +421,7 @@ body, html
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  transition: .4s ease;
 }
 
 /* Position the "next button" to the right */
