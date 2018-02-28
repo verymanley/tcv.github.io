@@ -135,7 +135,9 @@ body, html
 
 #about
 {
-  height: 80%;
+  display: table;
+  clear: both;
+  width: 100%;
   background-color: #282b2d;
   box-shadow: 0px 2px 20px #000000;
   border-top: 1px solid #F0FFF0;
@@ -168,8 +170,7 @@ body, html
 
 #about_background_kanji_right
 {
-  position:absolute;
-  right: 0;
+  float: right;
   color: #232729;
   font-size: 30vw;
   font-weight: bold;
@@ -180,12 +181,11 @@ body, html
 
 #about_background_kanji_left
 {
-  position:absolute;
-  left: 0;
+  float: left;
   color: #232729;
   font-size: 30vw;
   font-weight: bold;
-  text-align: right;
+  text-align: left;
   padding-left: 6%;
   padding-top: 6%;
   transition: .4s ease;
