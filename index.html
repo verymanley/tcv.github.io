@@ -53,7 +53,6 @@
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/grid/IMG_3337.JPG?raw=true" onclick="onClick(this)" style="width:100%">
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/grid/IMG_1786.JPG?raw=true" onclick="onClick(this)" style="width:100%">
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/TCV%20Event%20Flyer/IMG_3359.JPG?raw=true" onclick="onClick(this)" style="width:100%">
-
   </div>
   <div id="third">
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/grid/IMG_2814.JPG?raw=true" onclick="onClick(this)" style="width:100%">
@@ -145,34 +144,6 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 
