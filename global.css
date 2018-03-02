@@ -91,6 +91,7 @@ body, html
   overflow: hidden;
   background-color: #282b2d;
   z-index: 200;
+  transition: background-color .4s;
 }
 
 #navbar a {
@@ -117,7 +118,7 @@ body, html
   animation:animatetop .4s}@keyframes animatetop{from{top:0px;opacity:0} to{top:0;opacity:1}
 }
 
-.sticky + #about {
+.sticky + #about_container {
   margin-top: 50px;
 }
 
@@ -178,7 +179,14 @@ body, html
   clear: both;
   width: 100%;
   background-color: #282b2d;
-  transition: background-color .4s linear;
+  transition: background-color .4s;
+}
+
+#about_container
+{
+  display: table;
+  clear: both;
+  width: 100%;
 }
 
 #about:hover #about_title,
