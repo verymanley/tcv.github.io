@@ -25,20 +25,21 @@
     <a href="javascript:void(0)">Memories</a>
     <a href="javascript:void(0)">Menu</a>
     <a href="javascript:void(0)">Contact</a>
+    <a id="map_button" href="javascript:void(0)">Map</a>
   </div>
   <div id="about_container">
-    <div id="about_background_kanji_right">
+    <div id="about_left">
       <p>愛</p>
     </div>
-    <div id="about_background_kanji_left">
+    <div id="about_img_container">
+      <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3364.JPG?raw=true" onclick="onClick(this)" style="width:100%">
+    </div>
+    <div id="about_right">
       <p>愛</p>
     </div>
     <div id="about_txt_container">
       <p id="about_title">ストーリー [About]</p>
       <p id="about_txt">Bar GOAスタッフ、Birreria BEELONG`Sチーフを経てcafe&bar trench coat vanilla の経営をスタートする。同時に制作会社でグラフィックデザイナーとしての経験も積み2011年に独立起業。クラブDJ、イベントオーガナイザーとして活動後、函館のローカルFMでの音楽番組を企画、担当した経験などを生かし、様々なコンセプトに基づいたイベントを開催する。東洋占星術や風水などにも精通しており、スピリチュアルな視点からのアドバイスやメッセージを折り混ぜた営業を現在TCVにて行っている。</p>
-    </div>
-    <div id="about_img_container">
-      <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3364.JPG?raw=true" onclick="onClick(this)" style="width:100%">
     </div>
   </div>
 </div>
@@ -100,23 +101,7 @@
   </div>
 </div>
 <div id="contact">
-  <div id="contact_img"></div>
-  <div id="map_img"></div>
-  <div id="contact_head">
-    <p id="txt_title_c">デザイナー／TCVオーナー</p>
-    <p id="txt_title_c_2">[Kensuke Takaya]</p>
-    <div id="social_container">
-      <a id="social_linkedin" href="https://www.facebook.com/trench-coat-vanilla-110829389019899/"></a>
-      <a id="social_twitter" href="https://twitter.com/kensuke55388278"></a>
-      <a id="social_email" href="mailto:motherwit24@gmail.com"></a>
-    </div>
-    <div id="email_container">
-      <form action="mailto:motherwit24@gmail.com" method="post" enctype="text/plain">
-        <input id="email_box" type="text" name="mail" placeholder="email">
-	      <input id="email_send" type="submit" value="Send">
-      </form>
-    </div>
-  </div>
+  <div id="map"></div>
 </div>
 
 <div class="progress-container">
@@ -158,7 +143,24 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var myCenter = new google.maps.LatLng(41.7868465,140.7360871);
+  var mapOptions = {center: myCenter, zoom: 9};
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+  var marker = new google.maps.Marker({
+    position: myCenter,
+    animation: google.maps.Animation.BOUNCE
+  });
+  marker.setMap(map);
+
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(12);
+    map.setCenter(marker.getPosition());
+    });
+}
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcpt4Z_SY8JADKKyZISf2JFpNzVeRRBkw&callback=myMap"></script>
 
 </body>
 </html>
