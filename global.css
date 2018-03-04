@@ -69,25 +69,10 @@ body, html
   background: #232729;
 }
 
-#div_head
-{
-  position: absolute;
-  overflow: hidden;
-  width: 800px;
-  height: auto;
-  opacity: .9;
-  text-align: left;
-  font-size: 20px;
-  font: bold;
-  left: 50%;
-  margin-left: -400px;
-  margin-top: 40px;
-}
-
 /*---------navbar begin------------*/
 
 #navbar {
-  height: 50px;
+  height: 37px;
   overflow: hidden;
   background-color: #282b2d;
   z-index: 200;
@@ -99,14 +84,17 @@ body, html
   display: block;
   color: #F0FFF0;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 1s ease;
 }
 
 #navbar a:hover {
   background-color: #F0FFF0;
   color: #282b2d;
+  transition: .4s ease;
 }
 
 .sticky {
@@ -119,7 +107,7 @@ body, html
 }
 
 .sticky + #about_container {
-  margin-top: 50px;
+  margin-top: 37px;
 }
 
 /*---------navbar end------------*/
