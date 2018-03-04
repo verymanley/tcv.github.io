@@ -25,7 +25,13 @@
     <a href="javascript:void(0)">Memories</a>
     <a href="javascript:void(0)">Menu</a>
     <a href="javascript:void(0)">Contact</a>
-    <a id="map_button" href="javascript:void(0)">Map</a>
+    <a id="map_button" href="javascript:void(0)" onclick="onClick02(this)">Map</a>
+  </div>
+  <div id="modal02" class="modal_container" onclick="this.style.display='none'">
+    <span class="w3-button modal_span">&times;</span>
+    <div class="w3-modal-content modal_content">
+      <div id="map"></div>
+    </div>
   </div>
   <div id="about_container">
     <div id="about_left">
@@ -101,7 +107,26 @@
   </div>
 </div>
 <div id="contact">
-  <div id="map"></div>
+  <div id="about_container">
+    <div id="about_left">
+      <p>愛</p>
+    </div>
+    <div id="about_img_container">
+      <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/IMG_3323.JPG?raw=true" onclick="onClick(this)" style="width:100%">
+    </div>
+    <div id="about_right">
+      <p>愛</p>
+    </div>
+    <div id="about_txt_container">
+      <p id="txt_title_c">デザイナー／TCVオーナー</p>
+      <p id="txt_title_c_2">[Kensuke Takaya]</p>
+      <div id="social_container">
+        <a id="social_linkedin" href="https://www.facebook.com/trench-coat-vanilla-110829389019899/"></a>
+        <a id="social_twitter" href="https://twitter.com/kensuke55388278"></a>
+        <a id="social_email" href="mailto:motherwit24@gmail.com"></a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="progress-container">
@@ -141,6 +166,10 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
+}
+
+function onClick02(element) {
+  document.getElementById("modal02").style.display = "block";
 }
 
 function myMap() {
