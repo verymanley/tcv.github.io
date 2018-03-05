@@ -102,12 +102,11 @@ body, html
   right: 0;
   display: block;
   color: #F0FFF0;
-  text-align: center;
   padding: 10px 10px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: bold;
   transition: 1s ease;
+  background-image: url("https://raw.githubusercontent.com/verymanley/tcv.github.io/master/map.png");
+  background-repeat: no-repeat;
+  height: 20px;
 }
 
 .sticky {
@@ -129,6 +128,19 @@ body, html
   height:400px;
   margin-bottom: 100px;
 }
+
+#map_button_img
+{
+  background-image: url("");
+	background-size: cover;
+  position: absolute;
+  right: 0;
+  display: block;
+  color: #F0FFF0;
+  padding: 10px 10px;
+  transition: 1s ease;
+}
+
 
 /*---------navbar end------------*/
 
