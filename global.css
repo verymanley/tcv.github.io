@@ -421,6 +421,21 @@ body, html
   animation: animatezoom 0.6s;
 }
 
+.modal02_content
+{
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  width: 80%;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  animation: animatezoom 0.6s;
+}
+
 @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
 
 .modal_image
