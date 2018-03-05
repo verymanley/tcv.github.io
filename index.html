@@ -44,12 +44,6 @@
       <p id="about_txt">Bar GOAスタッフ、Birreria BEELONG`Sチーフを経てcafe&bar trench coat vanilla の経営をスタートする。同時に制作会社でグラフィックデザイナーとしての経験も積み2011年に独立起業。クラブDJ、イベントオーガナイザーとして活動後、函館のローカルFMでの音楽番組を企画、担当した経験などを生かし、様々なコンセプトに基づいたイベントを開催する。東洋占星術や風水などにも精通しており、スピリチュアルな視点からのアドバイスやメッセージを折り混ぜた営業を現在TCVにて行っている。</p>
     </div>
   </div>
-  <div id="modal02" class="modal_container" onclick="this.style.display='none'">
-    <span class="w3-button modal_span">&times;</span>
-    <div class="w3-modal-content modal_content">
-      <div id="map"></div>
-    </div>
-  </div>
 </div>
 
 <div class="parallax_memories">
@@ -94,8 +88,8 @@
     <img class="myImg" src="https://github.com/verymanley/tcv.github.io/blob/master/imgs/TCV%20Event%20Flyer/combination01.JPG?raw=true" onclick="onClick(this)" style="width:100%">
   </div>
   <div id="modal01" class="modal_container" onclick="this.style.display='none'">
-    <span class="w3-button modal_span">&times;</span>
-    <div class="w3-modal-content modal_content">
+    <span class="modal_span">&times;</span>
+    <div class="modal_content">
       <img id="img01" class="modal_image">
       <p id="caption"></p>
     </div>
@@ -129,6 +123,13 @@
         <a id="social_email" href="mailto:motherwit24@gmail.com"></a>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="modal02" class="modal_container">
+  <span class="modal_span" onclick="modal02.style.display='none'">&times;</span>
+  <div class="modal02_content">
+    <div id="map"></div>
   </div>
 </div>
 
@@ -167,18 +168,22 @@ function topFunction() {
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
 }
 
 function onClick02(element) {
   document.getElementById("modal02").style.display = "block";
 }
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 function myMap() {
   var mapCanvas = document.getElementById("map");
   var myCenter = new google.maps.LatLng(41.7868465,140.7360871);
-  var mapOptions = {center: myCenter, zoom: 12};
+  var mapOptions = {center: myCenter, zoom: 15};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
@@ -187,7 +192,7 @@ function myMap() {
   marker.setMap(map);
 
   google.maps.event.addListener(marker,'click',function() {
-    map.setZoom(14);
+    map.setZoom(16);
     map.setCenter(marker.getPosition());
     });
 }
