@@ -178,7 +178,7 @@ function onClick02(element) {
 function myMap() {
   var mapCanvas = document.getElementById("map");
   var myCenter = new google.maps.LatLng(41.7868465,140.7360871);
-  var mapOptions = {center: myCenter, zoom: 9};
+  var mapOptions = {center: myCenter, zoom: 12};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
@@ -187,7 +187,7 @@ function myMap() {
   marker.setMap(map);
 
   google.maps.event.addListener(marker,'click',function() {
-    map.setZoom(12);
+    map.setZoom(14);
     map.setCenter(marker.getPosition());
     });
 }
