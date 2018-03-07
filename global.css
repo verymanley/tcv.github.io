@@ -483,7 +483,7 @@ body, html
   position: relative;
   float: left;
   height: 47px;
-  width: 122px;
+  width: 200px;
   margin-top: 20px;
   padding-top: 20px;
 }
@@ -540,13 +540,6 @@ body, html
   border: 1px solid #F0FFF0;
   border-radius: 100%;
   transition: .8s ease;
-}
-
-#social_email:hover, #social_googleplus:hover, #social_linkedin:hover, #social_twitter:hover
-{
-  background-color: #F0FFF0;
-  border-color: #232729;
-  transition: .2s ease;
 }
 
 #contact_content_container
