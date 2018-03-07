@@ -488,46 +488,44 @@ body, html
   padding-top: 20px;
 }
 
-#social_linkedin
+#social_facebook
 {
-  background-image: url("http://foxbytellc.github.io/linkedin.png");
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/cf3b95c762ebe92318f2b6ad0c43fa07d58294b8/social/facebook01.png?raw=true");
   background-size: cover;
   position: relative;
   float: left;
   height: 25px;
   width: 25px;
   margin-left: 10px;
-  border: 1px solid #F0FFF0;
-  border-radius: 100%;
+  border: 4px solid #232729;
   transition: .5s ease;
+}
+
+#social_facebook:hover
+{
+  background-color: #F0FFF0;
+  border: 4px solid #F0FFF0;
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/cf3b95c762ebe92318f2b6ad0c43fa07d58294b8/social/facebook02.png?raw=true");
 }
 
 #social_twitter
 {
-  background-image: url("http://foxbytellc.github.io/twitter.png");
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/cf3b95c762ebe92318f2b6ad0c43fa07d58294b8/social/twitter01.png?raw=true");
   background-size: cover;
   position: relative;
   float: left;
   height: 25px;
   width: 25px;
   margin-left: 10px;
-  border: 1px solid #F0FFF0;
-  border-radius: 100%;
+  border: 4px solid #232729;
   transition: .5s ease;
 }
 
-#social_googleplus
+#social_twitter:hover
 {
-  background-image: url("http://foxbytellc.github.io/googleplus.png");
-  background-size: cover;
-  position: relative;
-  float: left;
-  height: 25px;
-  width: 25px;
-  margin-left: 10px;
-  border: 1px solid #F0FFF0;
-  border-radius: 100%;
-  transition: .5s ease;
+  background-color: #F0FFF0;
+  border: 4px solid #F0FFF0;
+  background-image: url("https://github.com/verymanley/tcv.github.io/blob/cf3b95c762ebe92318f2b6ad0c43fa07d58294b8/social/twitter02.png?raw=true");
 }
 
 #social_email
