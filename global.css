@@ -17,6 +17,13 @@ body, html
   text-decoration: none;
 }
 
+body
+{
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
 #txt_title_a
 {
   font-size: 80px;
