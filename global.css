@@ -15,6 +15,7 @@ body, html
   background-color: #282b2d;
   color: #F0FFF0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 #txt_title_a
